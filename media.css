@@ -1,0 +1,45 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .jungli {
+        max-width: 1100px;
+        border: 1px solid red;
+        margin: auto;
+    }
+
+    .jungli>.katta {
+        border: 1px solid red;
+        margin: auto;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .jungli>.katta>.kichik {
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width:1100px) {
+        .jungli>.katta>.kichik {
+            width: calc(100% /3);
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width:900px) {
+        .jungli>.katta>.kichik {
+            width: calc(100% /2);
+            margin: auto;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width:700px) {
+        .jungli>.katta>.kichik {
+            width: calc(100% /1);
+            text-align: center;
+            margin: auto;
+        }
+    }
